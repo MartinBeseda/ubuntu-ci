@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get clean && apt-get update && apt-get install -y -V make build-essential g++-8 wget git gcc gfortran pkg-config mpich
+RUN apt-get clean && apt-get update && apt-get install -y -V make build-essential g++-8 wget git gcc gfortran pkg-config mpich python python3
 
 # Download the new version of CMake and "install" it
 RUN wget https://github.com/Kitware/CMake/releases/download/v3.14.0-rc2/cmake-3.14.0-rc2-Linux-x86_64.sh
